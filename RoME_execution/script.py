@@ -50,7 +50,7 @@ def process_real_time():
     # Infinite loop to run in real-time
     while True:
         # Calculate elapsed time since the start of the script
-        elapsed_time = (time.time() - start_time) * 250
+        elapsed_time = (time.time() - start_time) * 100
 
         if write(heart_beat, heart_beat_output_file_path, elapsed_time) == False:
             break
